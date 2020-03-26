@@ -1,0 +1,61 @@
+:root{
+    --body-color: #FFFFFF;
+    --nav-bg: rgba(255, 255, 255, 0.96);
+    --toptab-bg:#532157;
+    --list-bg:#F3E6A2;
+    --tab-active:#50C6D8;
+    --tab-hover:#50C6D8;
+    --list-bg:#FF7373;
+    --list-text: #401B43;
+    --mwanzo-bg: #F1F1F1;
+    --active-li:#50C6D8;
+    --li:#000000;
+
+
+
+
+}
+
+/* global styles */
+
+body{
+
+}
+
+a{
+
+}
+
+:hover{
+
+}
+
+.container{
+
+}
+
+h1 h2 h3 h4 p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+li a{
+
+}
+li :hover{
+
+}
+/* global styles */
+
+/* other styles */
+
+
+
+
+
+
+
