@@ -10,6 +10,8 @@
     --mwanzo-bg: #F1F1F1;
     --active-li:#50C6D8;
     --li:#000000;
+    --margin-body:0px;
+    --padding-body:0px ;
 
 
 
@@ -17,16 +19,149 @@
 }
 
 /* global styles */
+.container{
+    width: 75%;
+    margin: auto;
+    overflow: hidden;
+    align-items: center;
+}
 
+
+/* navigation-bar */
+.nailab{
+    width: 59px;
+}
+.main-nav{
+    display: flex;
+    justify-content: space-evenly;
+    background: var(--nav-bg);
+    position: fixed;
+    width: 100%;
+    margin-top: 0;
+
+}
+.nav{
+    flex: 0.35;
+
+}
+
+.nav-list{
+    display: flex;
+    flex: 1;
+}
+.nav-list li{
+    margin: 20px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    color: var(--li)
+}
+
+
+
+
+
+/* navigation-bar-end*/
+.hero-content{
+    padding-top: 50px;
+}
+
+/*news section*/
+
+.news{
+    display: flex;
+    justify-content: space-around;
+}
+    /*card images*/
+
+    .thumb{
+        width: 80%;
+        height: 140px;
+        object-fit: cover;
+        object-position: 80% 60%;
+        border-radius: 5px;
+    }
+    
+    .avatar{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: 80% 60%;
+    }
+
+
+     /*card images*/
+     .minor{
+        display: flex;
+        width: 100%;
+        
+    } 
+     .headline{
+     
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 21px;
+        width: 75%;
+     }
+     .name{
+     
+        font-weight: bold;
+        font-size: 10px;
+        width: auto;
+        color: rgb(44, 44, 44);
+        margin: 0;
+        padding: 4px 2px;
+     }
+
+     .date{
+     
+        font-weight: bold;
+        font-size: 9px;
+        width: auto;
+        margin: 0;
+        /* padding: 2px 2px; */
+     }
+
+     .lable{
+     
+        font-weight: bold;
+        font-size: 9px;
+        width: 100%;
+        color: azure;
+        background: var(--tab-hover);
+        width: max-content;
+        padding: 1px 4px;
+
+     }
+
+     .author{
+         display: flex;
+     }
+    
+     .author-info{
+         display: flex;
+         flex-direction: column;
+         padding:  0 10px;
+     }
+
+
+
+
+/*news section*/
 body{
 
 }
 
 a{
+    
 
 }
 
 :hover{
+    
 
 }
 
@@ -44,12 +179,17 @@ li{
 
 }
 
-li a{
+li{
+
+    color: var(--active-li);
+}
+li:hover{
+    color: var(--active-li);
 
 }
-li :hover{
 
-}
+
+
 /* global styles */
 
 /* other styles */
