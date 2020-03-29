@@ -9,13 +9,15 @@
     <link rel="stylesheet" href="home.css">
 </head>
 
-<body> <div class="container">
+<body> 
 
     <nav class="main-nav">
+        <div class="containerr"></div>
        
 
         <div class="nav">
-            <div class="logo"><img class="nailab" src="./images/logo.svg" alt="" /></div>
+            <li>
+           <img class="nailab" src="./images/logo.svg" alt="" /></li>
         </div>
 
         <div class="nav-list">
@@ -28,6 +30,7 @@
         </div>
 
         <hr>
+        </div>
     
     </nav>
 </div>
@@ -42,25 +45,26 @@
             <div class="hero-content">
 
                 <div class="title">
-                    <h1 class="hero-head">Headline</h1>
+                    <h1 class="hero-head">Top News</h1>
                 </div>
 
                 <div class="news">
 
                     <div class="card">
                         <img class="thumb"
-                            src="https://images.unsplash.com/photo-1585144570630-65b30922ff03?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80"
+                            src="https://techcrunch.com/wp-content/uploads/2019/04/GettyImages-1079012962.jpg?w=1390&crop=1"
                             alt="">
                         <h1 class="headline">
                             DataGuard, which provides GDPR and privacy compliance-as-a-service, raises $20M</h1>
                         <div class="author">
                             <div class="hold-img"><img class="avatar" src="./images/testimony1.jpg" alt=""></div>
                             <div class="author-info">
-                                <h3 class="name">Showing results </h3>
+                                <h3 class="name">Ingrid Lunden </h3>
                                 <div class="minor">
-                                    <p class="date">Dec 17, 2018
+                                    <p class="date">March 26, 2020 / 12:30pm
+
                                     
-                                    <span class="lable">label</span></p>
+                                    <span class="lable">Tech - privacy</span></p>
                                 </div>
                             </div>
                         </div>
@@ -69,18 +73,18 @@
 
                     <div class="card">
                         <img class="thumb"
-                            src="https://images.unsplash.com/photo-1558981001-5864b3250a69?ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80"
+                            src="https://techcrunch.com/wp-content/uploads/2020/03/meri_williams_and_jonas_huckestein.jpg?w=850&h=492&crop=1"
                             alt="">
                         <h1 class="headline">Yaguara nabs $7.2M seed to help e-commerce companies understand customers
                             better</h1>
                         <div class="author">
                             <div class="hold-img"><img class="avatar" src="./images/testimony2.jpg" alt=""></div>
                             <div class="author-info">
-                                <h3 class="name">Showing results </h3>
+                                <h3 class="name">Tony Ndiritu </h3>
                                 <div class="minor">
-                                    <p class="date">Dec 17, 2018
+                                    <p class="date">Dec 17, 2018 / 8:30am
                                     
-                                    <span class="lable">label</span></p>
+                                    <span class="lable">fintech</span></p>
                                 </div>
                             </div>
                         </div>
@@ -89,18 +93,18 @@
 
                     <div class="card">
                         <img class="thumb"
-                            src="https://images.unsplash.com/photo-1584847642268-a34ebb908ccf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2098&q=80"
+                            src="https://techcrunch.com/wp-content/uploads/2017/06/gettyimages-540896710.jpg?w=1390&crop=1"
                             alt="">
                         <h1 class="headline">Airbnb to provide free or subsidized housing for 100,000 COVID-19
                             healthcare workers</h1>
                         <div class="author">
                             <div class="hold-img"><img class="avatar" src="./images/testimony3.jpg" alt=""></div>
                             <div class="author-info">
-                                <h3 class="name">Showing results </h3>
+                                <h3 class="name">Nailab </h3>
                                 <div class="minor">
-                                    <p class="date">Dec 17, 2018
+                                    <p class="date">Dec 17, 2018 / 2:30pm
                                     
-                                    <span class="lable">label</span></p>
+                                    <span class="lable">Tech</span></p>
                                 </div>
                             </div>
                         </div>
@@ -114,23 +118,58 @@
     </section>
 
     <section class="banner">
+<div class="pup">
 
         <div class="container">
             <div class="title">
-                <h1 class="hero-head">How do you plug into Nailab?</h1>
+                <h1 class="banner-head">How do you plug into Nailab?</h1>
             </div>
         </div>
-
+</div>
+<div class="pup">
         <!--tabs & content  go here -->
+        <div class="container">
         <div class="tabs">
+           
+            <div class="tab">
 
-
+                <button class="tablinks" onclick="openCity(event, 'London')">Entreprenuer</button>
+                <button class="tablinks" onclick="openCity(event, 'Paris')">Partner</button>
+                
+              </div>
+              
+              <div id="London" class="tabcontent">
+                <h3>London</h3>
+                <p>London is the capital city of England.</p>
+              </div>
+              
+              <div id="Paris" class="tabcontent">
+                <h3>Paris</h3>
+                <p>Paris is the capital of France.</p> 
+              </div>
+    
         </div>
+    </div>
     </section>
 
     <section class="programs">
         <!--programs & card  content  goes here -->
     </section>
+    <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        </script>
 </body>
 
 </html>
