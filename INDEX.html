@@ -129,26 +129,108 @@
 <div class="pup">
         <!--tabs & content  go here -->
         <div class="container">
-        <div class="tabs">
-           
             <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">As an
+                    Entrepreneur</button>
+                <button class="tablinks" onclick="openCity(event, 'Paris')">As a Partner</button>
+            </div>
 
-                <button class="tablinks" onclick="openCity(event, 'London')">Entreprenuer</button>
-                <button class="tablinks" onclick="openCity(event, 'Paris')">Partner</button>
-                
-              </div>
-              
-              <div id="London" class="tabcontent">
-                <h3>London</h3>
-                <p>London is the capital city of England.</p>
-              </div>
-              
-              <div id="Paris" class="tabcontent">
-                <h3>Paris</h3>
-                <p>Paris is the capital of France.</p> 
-              </div>
-    
-        </div>
+            <div id="London" class="tabcontent">
+                <div id="flexxy">
+                    <h3 id="tab-tings"> Startups face 3 major challenges while trying to build a sustainable and
+                        scalable
+                        business</h3>
+                    <!-- <p id="tab-tings-p">London is the capital city of England.</p> -->
+                    <ul id="zolutionz">
+                        <a href="#5050"><li><i class="fas fa-arrow-alt-circle-right"></i>Knowledge and skills to build a business
+
+
+                       </li>
+                       
+                        <li><i class="fas fa-arrow-alt-circle-right"></i>Capital
+                        </li>
+                     
+                        <li><i class="fas fa-arrow-alt-circle-right"></i>Growth opportunities
+
+                        </li></a>
+                        <!-- <hr> -->
+
+
+                    </ul>
+
+
+                </div>
+               
+                <!-- <img class="point" src="./images/SharedScreenshot.png" alt=""> -->
+                <br>
+                <br>
+                <br>
+
+                <div id="5050"></div>
+
+
+
+                <h4 id="tab-tings-2"> How do we address this?
+                </h4>
+
+                <div class="flex-cardz">
+                    <div class="card-flex">
+                        <img src="" alt="">
+
+                        <img src="https://img.icons8.com/plasticine/100/000000/training.png" width="50px">
+                        <h1 id="card-h1">Mwanzo-training</h1>
+                        <p id="card-p1">Mwanzo is about beginnings, you want to start a business in the innovation
+                            space, you want to start adding innovation to your business, you have an idea and have no
+                            idea where to start
+
+                        </p>
+
+                        <button>Get started</button>
+
+                    </div>
+                  
+                    <div class="card-flex">
+                        <img src="" alt="">
+                        <img src="https://img.icons8.com/cotton/64/000000/community-grants.png" width="50px">
+                        <h1 id="card-h1">Mwanzo-Community</h1>
+                        <p id="card-p1">Empower your startup to grow with a customized platform that enables you to;
+                            Gain business
+                            knowledge; Find growth opportunities; Connect with Mentors and peers.
+                        </p>
+                        <button>Get started</button>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="Paris" class="tabcontent">
+
+                <!-- </div> <h3 id="tab-tings"> Startups face 3 major challenges while trying to build a sustainable and scalable
+                business</h3> -->
+                <!-- <p id="tab-tings-p">London is the capital city of England.</p> -->
+
+                <div class="flex-cardz">
+                    <!-- <div class="card-flex">
+                    <img src="" alt=""> -->
+
+
+                    <!-- <h1 id="card-h1">Mwanzo-training</h1> -->
+                    <p id="card-p1">Nailab works with different organisations from Government, development aid,
+                        foundations and corporates that are youth centric to design programs aimed at catalyzing
+                        innovations, entrepreneurship and job creation.
+
+                        To become a partner, get intouch with our business development manager through <span
+                            class="italy"><a href="mailto:rachel@nailab.co.ke"> rachel@nailab.co.ke </a></span>
+
+
+                    </p>
+
+                    <!-- <button>Register</button> -->
+
+                    <!-- </div> -->
+
+                    <!--tabs end-->
     </div>
     </section>
 
@@ -156,19 +238,22 @@
         <!--programs & card  content  goes here -->
     </section>
     <script>
-        function openCity(evt, cityName) {
-          var i, tabcontent, tablinks;
-          tabcontent = document.getElementsByClassName("tabcontent");
-          for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-          }
-          tablinks = document.getElementsByClassName("tablinks");
-          for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-          }
-          document.getElementById(cityName).style.display = "block";
-          evt.currentTarget.className += " active";
-        }
+ function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
         </script>
 </body>
 
