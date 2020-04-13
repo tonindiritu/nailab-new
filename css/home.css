@@ -14,6 +14,25 @@
   --padding-body: 0px;
 }
 
+button {
+  width: max-content;
+  background: none;
+  border: none;
+  color: #ffffff;
+  background: #50C6D8;
+  padding: 11px 27px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  /* font-size: 16px; */
+  font-weight: 600;
+  /* outline: tomato; */
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url('./fonts/')  format('truetype');
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -187,7 +206,8 @@ color:#00BCD4;
     line-height: 41px;
     color: #fff;
     width: 30%;
-    margin: 30px 59px;
+    margin: 50px 59px;
+    margin-bottom: 10px;
   }
 
 /*news section*/
@@ -313,16 +333,152 @@ li:hover {
     min-height: 100vh;
 }
 .pup{
-    background: #532157;
+    background: #913f98;
 }
+
+.flex-one{
+  margin: 30px 59px;
+  display: flex;
+  margin-bottom: 100px;
+}
+.partnerz{
+  color: #fff;
+  width: 60%;
+  font-size: 18px;
+  line-height: 28px;
+  /* width: 100%; */
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.phoro img{
+  width:80%;
+  margin-top: -30px;
+  border-radius: 20PX;
+  margin-left: 90px;
+}
+
+.arrow img{
+  z-index: 1;
+  width: 230px;
+  margin: 0;
+  transform: rotate(245deg);
+}
+
+
+.box .issh{
+  color: #fff;
+  text-align: left;
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 41px;
+  width: 100%;
+}
+
+.item{
+  display: flex;
+}
+.box2 .item{
+  font-size: 18px;
+  line-height: 28px;
+  width: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px 0;
+  color: #fff;
+}
+
+.item .no{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 26px;
+  height: 26px;
+  margin-right: 20px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 100px;
+  background-color: #00BCD4;
+  font-family: 'Suisseintl webm', sans-serif;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+
+
 .whyt{background: #fff;}
+
+.whyt button{
+  border-radius: 5px;
+  background: none;
+  border: 1px solid #50C6D8;
+  color:#50C6D8 ;
+}
+
+
+.whyt button:hover{
+  background: #50c6d8;
+  color: #fff;
+}
+.whyt .issh{
+  text-align: center;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 41px;
+ 
+}
+
+.whyt .card-holder{
+  display: flex;
+  justify-content: space-between;
+  margin: 45px 40px;
+
+}
+
+.whyt .card{
+  width: 100%;
+  background:#F1F1F1;
+  border-radius: 5px;
+  padding: 20px;
+}
+.whyt .card-inner{
+  text-align: center;
+}
+
+.card-inner img{
+  width: 35px;
+}
+
+.whyt .card-headline{
+  font-size: 18px;
+  color: #45636C;
+
+}
+
+.whyt .card-content{
+  font-size: 14px;
+  color: #45636C;
+  margin: 20px 70px;
+}
+
 
 /* global styles */
 /* Style the tab */
 .tab {
   overflow: hidden;
   border: 2px solid #00BCD4;
-  background-color: #532157;
+  background-color: none;
   border-radius: 10px;
   width: 30%;
   margin: 30px 59px;
