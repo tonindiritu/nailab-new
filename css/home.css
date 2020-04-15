@@ -14,6 +14,13 @@
   --padding-body: 0px;
 }
 
+hr{
+  border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.24);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+}
+
 button {
   width: max-content;
   background: none;
@@ -111,15 +118,8 @@ color:#00BCD4;
 }
 
 /* Fading animation */
-.slide-in-bck-center {
-  -webkit-animation-name: slide-in-bck-center;
-  -webkit-animation-duration: 1.5s;
-  animation-name: slide-in-bck-center;
-  animation-duration: 1.5s;
-}
 
-@-webkit-keyframes slide-in-bck-center{0%{-webkit-transform:translateZ(600px);transform:translateZ(600px);opacity:0}100%{-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}@keyframes slide-in-bck-center{0%{-webkit-transform:translateZ(600px);transform:translateZ(600px);opacity:0}100%{-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}
-/* Fading animation */
+
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -163,7 +163,7 @@ color:#00BCD4;
 .main-nav {
   display: flex;
   justify-content: space-evenly;
-  background: var(--nav-bg);
+  background: rgb(255, 255, 255);
   position: fixed;
   width: 100%;
   margin-top: 0;
@@ -288,7 +288,7 @@ color:#00BCD4;
   background: var(--list-bg);
   width: max-content;
   padding: 1px 8px;
-  border-radius: 5px;
+  border-radius: 1px;
 }
 
 .author {
@@ -334,38 +334,46 @@ li:hover {
 }
 .banner{
     margin-top: 30px;
-    min-height: 100vh;
+    min-height: max-content;
 }
 .pup{
-    background: #913f98;
+    background: #532157;
 }
 
 .flex-one{
-  margin: 30px 127px;
+  margin: 30px 63px;
   display: flex;
+  flex-direction: row;
   margin-bottom: 60px;
 }
 .partnerz{
   color: #fff;
-  width: 60%;
-  font-size: 18px;
-  line-height: 28px;
-  /* width: 100%; */
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+    line-height: 1.44444444;
+    letter-spacing: normal;
+    font-size: 1rem;
+    width: 50%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px 0;
+   
+ 
 }
 .box{
   display: flex;
   justify-content: space-evenly;
-  flex-direction: column;
+  flex-direction: row;
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 40px;
 }
 
 .box2{
   width: 40%;
-  /* background: #F3E6A2; */
-  padding: 10px 20px;
-  border-radius: 5px;
+  /* background: #ffffff; */
+  padding: 20px 20px;
+  border-radius: 15px;
   justify-content: center;
 }
 
@@ -398,31 +406,33 @@ li:hover {
 
 
 .box .issh{
-  color: #fff;
+  color: #1b1b1b;
   text-align: left;
-  font-weight: 700;
-    line-height: 1.1875;
-    letter-spacing: -.3px;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-  width: 100%;
-  margin-top: 40px;
+  /* font-weight: 100; */
+  line-height: 1.1875;
+  letter-spacing: -.3px;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  width: 50%;
+  margin-top: 55px;
+  font-family: manrope ,sans-serif;
 }
 
 .item{
   display: flex;
 }
 .box2 .item{
-  font-weight: 400;
-    line-height: 1.44444444;
-    letter-spacing: normal;
-    font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.44444444;
+  letter-spacing: normal;
+  font-size: 1rem;
   width: 100%;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 10px 0;
-  color: #ffffff;
+  font-family: manrope ,sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  margin: 5px 0;
+  color: #000000;
 }
 
 .item .no{
@@ -433,7 +443,7 @@ li:hover {
   width: 30px;
   height: 30px;
   margin-right: 20px;
-  margin-top: 0;
+  margin-top: -4px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -443,7 +453,7 @@ li:hover {
   -ms-flex-align: center;
   align-items: center;
   border-radius: 100px;
-  background-color: #e63225;
+  background-color: #fd5050;
   font-family: 'Suisseintl webm', sans-serif;
   color: #fff;
   font-size: 12px;
@@ -507,9 +517,9 @@ li:hover {
 .whyt .card{
   width: 100%;
   background: #ffffff;
-  border-radius: 5px;
-  padding: 20px;
-  /* box-shadow: 0 0 .8rem 0 rgba(0,0,0,.1)!important; */
+  border-radius: 10px;
+  padding-bottom: 20px;
+  box-shadow: 0 0 .8rem 0 rgba(0,0,0,.1)!important;
 }
 .whyt .card-inner{
   text-align: center;
@@ -522,12 +532,13 @@ li:hover {
   height: 180px;
   object-fit: cover;
   object-position: 80% 80%;
-  border-radius: 26px;
+  /* border-radius: 10px; */
+  /* margin: 20px 30px; */
 }
 
 .card-inner img:hover{
   /* width: 55px; */
-  width: 100%;
+  
   height: 180px;
   object-fit: cover;
   object-position: 80% 80%;
@@ -535,25 +546,19 @@ li:hover {
 }
 .whyt .card-headline{
   color: #1d1d1d;
-  font-weight: 700;
+  font-weight: 200;
   line-height: 1.1875;
   letter-spacing: -.3px;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .whyt .card-content{
-
-color: #564c4c;
-
-margin: 20px 10px;
-
-font-weight: 400;
-
-line-height: 1.44444444;
-
-letter-spacing: normal;
-
-font-size: 1.0rem;
+color: #0c0b0b;
+margin: 20px 50px;
+font-weight: 100;
+line-height: 1.44444444;
+letter-spacing: normal;
+font-size: 1.0rem;
 }
 
 
@@ -561,7 +566,7 @@ font-size: 1.0rem;
 /* Style the tab */
 .tab {
   overflow: hidden;
-  border: 2px solid #00BCD4;
+  border: 1px solid #fdfdfd30;
   background-color: none;
   border-radius: 10px;
   width: 23%;
@@ -584,6 +589,7 @@ font-size: 1.0rem;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   font-weight: 400;
+  font-family: manrope ,sans-serif;
 }
 
 /* Change background color of buttons on hover */
@@ -616,7 +622,158 @@ font-size: 1.0rem;
   
 
 /* other styles */
+#fotter{
+  width: 100%;
+  height: auto;
+  margin: 0 0 0 0;
+  /* margin-top: -10; */
+  background: #1c1f20;
+}
 
+#fotter li{
+  display: flex;
+  flex-direction: column;
+}
+
+#fotter h1{
+  /* font-family: helvetica; */
+  /* font-family: system-ui,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif; */
+  font-family: "Libre Baskerville", serif;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 28px;
+  width: 100%;
+  color: #ffffff;
+  margin-left: 20;
+  text-align: left;
+}
+
+
+#fotter li{
+ text-transform: initial;
+ color: rgb(166, 164, 164);
+ font-size: 14px;
+ /* font-weight:normal; */
+ /* font-weight: 400; */
+ margin: 10  0 10 20;
+ /* font-size: 11px; */
+ line-height: 2.42859;
+ font-weight: 400;
+ letter-spacing: -.016em;
+ /* font-family: Lato, sans-serif; */
+ /* font-family: system-ui,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif; */
+ /* font-family: "Caladea", serif; */
+ font-family: "Rubik", sans-serif;
+ -webkit-font-smoothing: antialiased;
+ /* font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif; */
+ width: 100%;
+ text-align: left;
+}
+
+#fotter #vitu{
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  padding: 10px 0px;
+  text-align: justify;
+  padding-bottom: 0;
+}
+
+#fotter .container{
+  width: 70%;
+  margin: auto;
+  align-items: center;
+}
+
+#right{
+  width: 33%;
+  height: auto;
+  /* margin-top: 90; */
+  margin-right: 70;
+}
+#fotter #left{
+  /* margin-top: 90; */
+  width: 25%;
+  height: auto;
+}
+
+#fotter #left h1{
+  /* margin-top: 270; */
+  text-align: left;
+  font-size: 13px;
+}
+
+#fotter .content-cont{
+  
+}
+
+#fotter .content-cont .icons{
+ 
+  display: flex;
+  flex-direction: row;
+}
+
+.bottom{
+  display: inline-flex;
+  width: 100%;
+  text-align: center;
+  padding: 10 0 50 0;
+}
+.bottom p{
+  /* margin:3%; */
+  width: 100%;
+  font-size: 13px;
+  line-height: 1.42859;
+  font-weight: 400;
+  letter-spacing: -.016em;
+  /* font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif; */
+  width: 100%;
+  font-family: "Caladea", serif;
+  text-align: left;
+  margin-left: 6%;
+  /* margin-right: 8%; */
+  color: #7c7c7c;
+  /* margin-left: 20; */
+  /* padding-bottom: 46; */
+}
+
+.controla{
+  padding: 50 0 0 30;
+  /* display:flex; */
+  display: inline-flex;
+  flex-direction:row;
+  text-align: justify;
+}
+
+#Right{
+  width:auto%;
+
+  }
+#fotter #Right {
+  width: 100%;
+  height: auto;
+  /* margin-top: 90; */
+  margin: 0 2%;
+}
+
+
+#flex-me{
+  display: flex;
+  /* width: 100%; */
+  /* flex: 1; */
+  margin-bottom: 1;
+  justify-content: stretch;
+}
+
+
+#flex-me a{
+  text-decoration: none;
+  /* justify-content:space-evenly; */
+  /* margin: 1%; */
+}
 
 
 
