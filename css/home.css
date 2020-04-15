@@ -337,7 +337,7 @@ li:hover {
     min-height: 100vh;
 }
 .pup{
-    background: #532157;
+    background: #913f98;
 }
 
 .flex-one{
@@ -531,7 +531,7 @@ li:hover {
   height: 180px;
   object-fit: cover;
   object-position: 80% 80%;
-  border-radius: 1px;
+
 }
 .whyt .card-headline{
   color: #1d1d1d;
