@@ -5,12 +5,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homepage</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/d22c9b4f25.css">
     <link rel="shortcut icon" type="image/ico" href="./images/fav.ico">
     <link rel="stylesheet" href="./css/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://raw.githubusercontent.com/daneden/animate.css/master/animate.css">
 </head>
 
-<body> 
+<body onload='document.form1.text1.focus()'> 
 
     <nav class="main-nav">
         <div class="containerr"></div>
@@ -24,11 +26,11 @@
         <div class="nav-list">
             <li>Home</li>
             <li> <a href="#hero">News</a></li>
-            <li><a href="#pup">Plug into Nailab</a></li>
-            <li>Partnerships</li>
+            <li><a href="#pup" pat>Plug into Nailab</a></li>
+            <li><a href="#pat" >Partnerships</a></li>
             <li>About us</li>
             <li>Programs</li>
-            <li><Button>Sign in</Button></li>
+            <Button class="btn">Sign in</Button>
 
         </div>
 
@@ -209,9 +211,9 @@
         </div>
 
     </section>
-    <div id="pup"></div>
+   
     <br>
-    <br>
+    
 
 
     <section class="banner">
@@ -219,6 +221,7 @@
 
         <div class="container">
             <div class="title">
+                <div id="pup"></div>
                 <h1 class="banner-head"> How do you plug into Nailab?</h1>
             </div>
         </div>
@@ -238,82 +241,32 @@
           <div id="Enterprenuer" class="tabcontent">
             <div class="container">
               <div class="flex-one">
-                  <div class="box">
-                      
-                    <h3 class="issh">Startups  major challenges </h3>
-                    <p class="partnerz">Startups face 3 major challenges while trying to build a sustainable and scalable business.<br> 
+                 
+                      <div class="botth">
+                        <h3 class="issh">Startups  major challenges </h3>
+                        <p class="Start-up">Startups face 3 major challenges while trying to build a sustainable and scalable business.<br> 
+                      <div class="both">
+                        <div>
 
-                  <div class="box2">
-                    
-
-                    <!-- <div class="card-holder">
-
-                        <div class="kadi">
-                            <img src="./images/Student.png" alt="">
-                            <div class="item">Knowledge and skills to build a business.</div>
+                            <div><img src="./images/know.png" alt=""></div>
+                            <div>text</div>
                         </div>
+  
+                        <div>
+                          <div><img src="./images/cap.png" alt=""></div>
+                          <div>text</div>
+                      </div>
 
-                        <div class="kadi">
-                            <img src="./images/Student.png" alt="">
-                            <div class="item">Capital.</div>
-                        </div>
-
-                        <div class="kadi">
-                            <img src="./images/Student.png" alt="">
-                            <div class="item">Growth Opportunities.</div>
-                        </div>
-
-
-
+                      <div>
+                        <div><img src="./images/cap.png" alt=""></div>
+                        <div>text</div>
                     </div>
-                      <!-- <div class="item"><span class="no">1</span>Knowledge and skills to build a business.</div>
-                   
-                      <div class="item"><span class="no">2</span>Capital.</div>
-                     
-                      <div class="item"><span class="no">3</span>Growth Opportunities.</div> -->
 
-                   
+                      </div>
+                            
 
-                  <!-- <div class="whyt">
-                    <div class="containeer">
-                
-                    <h3 class="issh">How do we address this?</h3> -->
-
-                    
-
-        
-                    <!-- <div class="card-holder">
-                        
-                        <div class="card">
-                            <div class="card-inner">
-                                <img src="https://images.unsplash.com/photo-1554224155-3a58922a22c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60" alt="">
-                               <div>
-                                <h1 class="card-headline">Mwanzo-training</h1>
-                                <p class="card-content">Mwanzo is about beginnings, you want to start a business in the innovation space, you want to start adding innovation to your business, you have an idea and have no idea where to start</p>
-                                <button>Get Started</button>
-                            </div>
                         </div>
-                    </div>
-        
-                        <div class="card">
-                            <div class="card-inner">
-                                <img src="https://images.unsplash.com/photo-1532708059644-5590ed51ce4c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" alt="">
-                                <div>
-                                <h1 class="card-headline">Mwanzo community </h1>
-                                <p class="card-content">This is a virtual platform that equips entrepreneurs with the skills to build sustainable businesses that practically solve Africa’s unique challenges using technology</p>
-                                <button>Get Started</button>
-                            </div>
-                            </div>
-                        </div>
-        
-        
-        
-                    </div> -->
-        
-        
-        
-        
-                    </div>
+                 
         
                 </div>
                   </div>
@@ -341,7 +294,7 @@
           <div id="Partner" class="tabcontent">
             <div class="flex-one">
                 <div class="part">
-                    <h1 class="issh">Become a partner</h3>
+                    <h1 class="issh"> Partner with us</h3>
                         <p class="partnerz">Nailab works with different organisations from Government, development aid, foundations and corporates that are youth centric to design programs aimed at catalyzing innovations, entrepreneurship and job creation.<br> 
                         </p>
 
@@ -358,7 +311,10 @@
                       <p><input placeholder="First name..." oninput="this.className = ''" name="fname"></p>
                       <p><input placeholder="Email..." oninput="this.className = ''" name="Email"></p>
                       <p><input placeholder="your message ..." oninput="this.className = ''" name="text"></p>
-                      <button type="button" id="prevBtn" onclick="nextPrev(-1)">send message</button>
+                      <button type="button" id="send"> <i class="fa fa-paper-plane"></i>Send message</button>
+                      <div class="notification">
+                          <p>your message has been sent,Thank you for contacting Us</p>
+                      </div>
                     </div>
                 </form>
 
@@ -383,10 +339,19 @@
 
                     <!--tabs end-->
         </div>
+        <div id="pat"></div>
+        <br>
+        <br>
     </div>
+  
     </section>
+  
+    
 
     <section class="programs">
+        <br>
+        
+       
 
         <!--programs & card  content  goes here -->
 
@@ -398,29 +363,163 @@
             <div class="card-holder">
                 
 
-                <div class="card">
-                    <div class="card-inner">
-                        <img src="https://images.unsplash.com/photo-1586876636868-4f03c27a2897?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=60" alt="">
+                <div class="caard">
+                    <div class="caard-inner">
+                        <img class ="prog-pic" src="./images/banner-b.png" alt="">
                         <div class="cell">
 
-                            <h1 class="card-headline">I Accelerator<span class="ptlogo"><img src="./images/UNFPAcd.svg" alt=""></span></h1>
-                            <p class="card-content">I am initiative supports innovations in sexual reproductive health 
+                            <h1 class="caard-headline">I Accelerator<span class="ptlogo"><img src="./images/UNFPAcd.svg" alt=""></span></h1>
+                            <p class="caard-content">I am initiative supports innovations in sexual reproductive health 
                                 Running in 4 countries; Kenya, Uganda, Tanzania, Rwanda 
                                 </p>
                                <div class="itemz">
-                                   <span class="uno">542 applications received</span>
+                                   <span class="uno"><i class="fa fa-file"></i></i>542 applications received</span>
                                    <hr>
-                                   <span class="uno">28 entrepreneurs trained</span>
+                                   <span class="uno"><i class="fa fa-id-card"></i>28 entrepreneurs trained</span>
                                    <hr>
-                                   <span class="uno">$ 804,000 invested in the program </span>
+                                   <span class="uno"><i class="fa fa-coins"></i>$ 804,000 invested in the program </span>
                                </div>
-                            <button>Get Started</button>
+                         
 
                         </div>
                       
                     </div>
                 </div>
 
+                <div class="caard">
+                    <div class="caard-inner">
+                        <img class ="prog-pic" src="./images/top.jpg" alt="">
+                        <div class="cell">
+
+                            <h1 class="caard-headline">The next Economy<span class="ptlogo"><img src="./images/goodsoscd.png" alt="" width="50px"></span></h1>
+                            <p class="caard-content">I am initiative supports innovations in sexual reproductive health 
+                                Running in 4 countries; Kenya, Uganda, Tanzania, Rwanda 
+                                </p>
+                               <div class="itemz">
+                                   <span class="uno"><i class="fa fa-file"></i></i>542 applications received</span>
+                                   <hr>
+                                   <span class="uno"><i class="fa fa-id-card"></i>28 entrepreneurs trained</span>
+                                   <hr>
+                                   <span class="uno"><i class="fa fa-coins"></i>$ 804,000 invested in the program </span>
+                               </div>
+                        
+
+                        </div>
+                      
+                    </div>
+                </div>
+
+          
+
+
+                <div class="caard">
+                    <div class="caard-inner">
+                        <img class ="prog-pic" src="./images/banner.png" alt="">
+                        <div class="cell">
+
+                            <h1 class="caard-headline">Africa Netprenuer Prize<span class="ptlogo"><img src="./images/UNFPAcd.svg" alt=""></span></h1>
+                            <p class="caard-content">I am initiative supports innovations in sexual reproductive health 
+                                Running in 4 countries; Kenya, Uganda, Tanzania, Rwanda 
+                                </p>
+                               <div class="itemz">
+                                   <span class="uno"><i class="fa fa-file"></i></i>542 applications received</span>
+                                   <hr>
+                                   <span class="uno"><i class="fa fa-id-card"></i>28 entrepreneurs trained</span>
+                                   <hr>
+                                   <span class="uno"><i class="fa fa-coins"></i>$ 804,000 invested in the program </span>
+                               </div>
+                          
+
+                        </div>
+                      
+                    </div>
+                </div>
+
+              
+
+
+                
+             
+            </div>
+            <div class="card-holder">
+                
+
+                <div class="caard">
+                    <div class="caard-inner">
+                        <img class ="prog-pic" src="./images/piv.jpg" alt="">
+                        <div class="cell">
+
+                            <h1 class="caard-headline">Leap 2<span class="ptlogo"><img src="./images/UNFPAcd.svg" alt=""></span></h1>
+                            <p class="caard-content">I am initiative supports innovations in sexual reproductive health 
+                                Running in 4 countries; Kenya, Uganda, Tanzania, Rwanda 
+                                </p>
+                               <div class="itemz">
+                                   <span class="uno"><i class="fa fa-file"></i></i>542 applications received</span>
+                                   <hr>
+                                   <span class="uno"><i class="fa fa-id-card"></i>28 entrepreneurs trained</span>
+                                   <hr>
+                                   <span class="uno"><i class="fa fa-coins"></i>$ 804,000 invested in the program </span>
+                               </div>
+                          
+
+                        </div>
+                      
+                    </div>
+                </div>
+
+                <div class="caard">
+                    <div class="caard-inner">
+                        <img class ="prog-pic" src="./images/pic.png" alt="">
+                        <div class="cell">
+
+                            <h1 class="caard-headline">Make It<span class="ptlogo"><img src="./images/UNFPAcd.svg" alt=""></span></h1>
+                            <p class="caard-content">I am initiative supports innovations in sexual reproductive health 
+                                Running in 4 countries; Kenya, Uganda, Tanzania, Rwanda 
+                                </p>
+                               <div class="itemz">
+                                   <span class="uno"><i class="fa fa-file"></i></i>542 applications received</span>
+                                   <hr>
+                                   <span class="uno"><i class="fa fa-id-card"></i>28 entrepreneurs trained</span>
+                                   <hr>
+                                   <span class="uno"><i class="fa fa-coins"></i>$ 804,000 invested in the program </span>
+                               </div>
+                        
+
+                        </div>
+                      
+                    </div>
+                </div>
+
+          
+
+
+                <div class="caard">
+                    <div class="caard-inner">
+                        <img class ="prog-pic" src="./images/top.jpg" alt="">
+                        <div class="cell">
+
+                            <h1 class="caard-headline">I Accelerator<span class="ptlogo"><img src="./images/UNFPAcd.svg" alt=""></span></h1>
+                            <p class="caard-content">I am initiative supports innovations in sexual reproductive health 
+                                Running in 4 countries; Kenya, Uganda, Tanzania, Rwanda 
+                                </p>
+                               <div class="itemz">
+                                   <span class="uno"><i class="fa fa-file"></i></i>542 applications received</span>
+                                   <hr>
+                                   <span class="uno"><i class="fa fa-id-card"></i>28 entrepreneurs trained</span>
+                                   <hr>
+                                   <span class="uno"><i class="fa fa-coins"></i>$ 804,000 invested in the program </span>
+                               </div>
+                       
+
+                        </div>
+                      
+                    </div>
+                </div>
+
+              
+
+
+                
              
             </div>
 
@@ -446,7 +545,7 @@
                     <div id="Right">
                         <h1>External links</h1>
                         <li>Blog</li>
-                        <li> Membership</li>
+                        <li>Membership</li>
                         <li></li>
                         <li></li>
 
@@ -455,20 +554,21 @@
 
                     <div id="Right">
                         <h1>Resources</h1>
-                        <li>media</li>
-                        <li> Documents</li>
-                        <li></li>
+                        <li><a href='https//www.Facebook.com'>Media</li>
+                        <li><a href='https//www.Facebook.com'>Documents</li>
+                        <li><a href='https//www.Facebook.com'>learning</li></li>
                         <li></li>
 
 
                     </div>
 
                     <div id="Right">
-                        <h1>social Media</h1>
-                        <li>Leadership</li>
-                        <li> Training</li>
-                        <li></li>
-                        <li></li>
+                        <h1>Social Media</h1>
+                        <li><a href='https//www.Facebook.com'><i class="fa fa-facebook"></i></i>Facebook</a></li>
+                        <li><a href='https//www.Facebook.com'><i class="fa fa-twitter"></i>Twiter</a></li>
+                        <li><a href='https//www.Facebook.com'><i class="fa fa-youtube"></i>youtube</a></li>
+                        <li><a href='https//www.Facebook.com'><i class="fa fa-instagram"></i>Instagram</a></li>
+                        <li><a href='https//www.Facebook.com'><i class="fa fa-linkedin"></i>Linked in</a></li>
 
 
                     </div>
@@ -485,9 +585,10 @@
                 <p>Terms of Service </p>
                 <p>Notice Takedown</p>
                 <p> Policy GDPR Security</p>
+                <p> FAQ</p>
                 <p>&copy;
-                    <script>document.write(new Date().getFullYear());</script>Nailab.™️</p>
-
+                    <script>document.write(new Date().getFullYear());</script>Nailab.™️ &nbsp; &nbsp;</p>
+              
             </div>
 
 
@@ -548,6 +649,22 @@ function openCity(evt, cityName) {
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+
+function ValidateEmail(inputText)
+{
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+if(inputText.value.match(mailformat))
+{
+document.form1.text1.focus();
+return true;
+}
+else
+{
+alert("You have entered an invalid email address!");
+document.form1.text1.focus();
+return false;
+}
+}
         </script>
 </body>
 
