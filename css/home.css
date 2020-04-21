@@ -22,6 +22,8 @@
 html {
   scroll-behavior: smooth;
 }
+
+
 .btn{
   margin: 25px;
   margin-top: 15px;
@@ -37,8 +39,13 @@ html {
   font-size: 14px;
   font-weight: 100;
 
-}.fa{
+}
+.fa{
   margin: 0 10px 0 0;
+}
+.hero{
+  background: #f5f5f5;
+  padding-bottom: 40px;
 }
 
 .notification{
@@ -97,7 +104,7 @@ button {
   border: none;
   /* border-radius: 4px; */
   color: #ffffff;
-  background: #4CAF50;
+  background: #01b3ca;
   padding: 11px 27px;
   text-align: center;
   text-decoration: none;
@@ -133,7 +140,7 @@ button {
   top: 50%;
   width:auto;
   margin-top: -62px;
-  color: #607D8B;
+  color: #ffffff;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -240,14 +247,15 @@ color:#00BCD4;
   width: 100%;
   margin-top: 0;
   Z-INDEX: 1;
+  padding-top: 10px;
   box-shadow: 0 1px 2px 0 rgba(255, 255, 255, 0.3), 0 1px 3px 1px rgba(162, 167, 171, 0.15);
 }
 .nav {
-  flex: 0.5;
+  flex: 0.558;
 }
 .nav  li {
   margin: 15px;
-  
+  margin-right: 3;
   }
 
 .nav-list {
@@ -255,15 +263,20 @@ color:#00BCD4;
   flex: 1.0;
 }
 .nav-list li {
-  margin: 25px;
+  margin: 21px;
   margin-bottom: 10px;
   font-family: Arial;
   font-style: normal;
-  font-weight: normal;
+  /* font-weight: bold; */
   font-size: 13px;
   line-height: 21px;
   color: var(--li);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#current{
+  color: #50c6d8;
+  font-weight: bold;
+
 }
 
 /* navigation-bar-end*/
@@ -275,8 +288,9 @@ color:#00BCD4;
   font-size: 36px;
   line-height: 41px;
   width: 50%;
-  color: #020202;
+  color: #1d1b1b;
   margin: 39px 59px;
+  margin-top: 68px;
 }
 .banner-head {
     font-weight: bold;
@@ -309,7 +323,7 @@ color:#00BCD4;
 
 .thumb {
   width: 100%;
-  height: 180px;
+  height: 200px;
   object-fit: cover;
   object-position: 80% 60%;
   /* border-radius: 5px; */
@@ -333,6 +347,7 @@ color:#00BCD4;
   font-weight: bold;
   font-size: 16px;
   line-height: 23px;
+  color: #1b1919;
   width: 100%;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -341,7 +356,7 @@ color:#00BCD4;
   font-weight: bold;
   font-size: 10px;
   width: auto;
-  color: #686666;
+  color: #504d4d;
   margin: 0;
   padding: 4px 2px;
 }
@@ -349,10 +364,11 @@ color:#00BCD4;
 .date {
   font-weight: 100;
   font-size: 9px;
+  font-weight: bold;
   width: auto;
   margin: 0;
   padding: 2px 2px;
-  color: #686666;
+  color: #b7b7b7;
 }
 
 .lable {
@@ -360,7 +376,7 @@ color:#00BCD4;
   font-size: 9px;
   width: 100%;
   color: azure;
-  background: var(--list-bg);
+  background: #01b3ca;
   width: max-content;
   padding: 1px 8px;
   border-radius: 1px;
@@ -393,7 +409,7 @@ a { text-decoration: none;
   /* font-family: inherit; */
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding: 40px;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   padding-top: 0px;
   width: 50%;
   min-width: 300px;
@@ -443,12 +459,13 @@ li:hover {
   color: var(--active-li);
 }
 .banner{
-    margin-top: 30px;
+    /* margin-top: 30px; */
     min-height: max-content;
-    background: aliceblue;
+    background: inherit;
+    background: #f5f5f5;
 }
 .pup{
-    background: aliceblue;
+    /* background: white; */
     /* min-height: 100vh; */
 }
 
@@ -458,6 +475,7 @@ li:hover {
   flex-direction: row;
   margin-bottom: 60px;
   BACKGROUND: #00BCD4;
+  /* background-image: linear-gradient(to bottom,rgb(0, 188, 212) 0,rgba(71, 199, 206, 0.14) 100%); */
   /* BORDER-RADIUS: 5PX; */
   margin-top: 49px;
   padding: 40px;
@@ -477,7 +495,7 @@ li:hover {
   line-height: 1.44444444;
   /* letter-spacing: 1px; */
   /* font-size: 1rem; */
-  font-size: 17px;
+  font-size: 19px;
   padding: 0px 167px 50px 50px;
   width: auto;
   text-rendering: optimizeLegibility;
@@ -791,12 +809,151 @@ FONT-FAMILY: ARIAL;
 #pat{
   background: aliceblue;
 }
+.botth{
+  margin-top: 0px;
+  background: #ffffff;
+  border-radius: 5px;
+  margin: 10px;
+  box-shadow: 0 0 .8rem 0 rgba(0,0,0,.1)!important;
+}
+
+.both{
+  display:flex;
+  align-content: space-between;
+  margin: 30px 180px;
+  margin-bottom: 50px;
+}
+
+.botth .issh {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 19px;
+  margin-top: 25px;
+  /* padding-top: 39px; */
+  padding-bottom: 45px;
+}
+
+#issh{
+  /* margin: 58px; */
+  margin-bottom: 20px;
+  padding-bottom: 2px;
+  padding-top: 55px;
+}
+
+.botth .start-up{
+  font-size: 19px;
+  text-align: center;
+  margin-bottom: 55px;
+  margin: 33px 306px;
+}
+
+
+
+.blob{
+  width: 33.3%;
+  padding: 11px 0;
+  margin: 10px;
+  text-align: center;
+  font-size: 13px;
+  line-height: 1.44;
+  font-weight: bold;
+  color: #525652;
+  font-family: 'Rubik', sans-serif;
+  /* font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif; */
+}
+
+.blob img{
+  width: 40px;
+  margin: 10px;
+}
 
 .programs{
   /* background: #ffffff; */
   background: #272227;
   background: #47274d;
 }
+.mwanzos{
+  margin: 0 163px;
+  margin-bottom: 0px;
+  /* padding-bottom: 63px; */
+  padding: 30px 53px;
+  background: #f7f7f7;
+}
+.mwanzos img{
+  width: 43%;
+  height: 220px;
+  object-fit: cover;
+  object-position: 80% 60%;
+  border-radius: 10px;
+}
+
+.mwanzo{
+  display: flex;
+  max-width: 100%;
+  padding: 0 0PX;
+}
+
+.mwanzo div{
+  margin: -19px 26px;
+}
+.mwanzo div{
+  margin: 4px 31px;
+  margin-right: 0;
+}
+.mwanzo-b div{
+  margin: 4px 31px;
+  margin-left: 0;
+}
+
+
+.mwanzo-b{
+  display: flex;
+  flex-direction: row-reverse;
+  /* padding: 30PX; */
+  padding: 0 0PX;
+  padding-top: 86px;
+}
+
+.mwanzos h1 p{
+  font-weight: bold;
+  color: #525652;
+ 
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+.mwanzos  button{
+  width: 35%;
+  padding: 11px;
+  /* margin-top: 15px; */
+  border-radius: 4px;
+  font-size: 11px;
+  background: #00BCD4;
+  text-transform: uppercase;
+}
+
+.mwanzos  button:hover{
+  background:#4ecc53
+}
+
+.mwanzos p{
+  width: 100%;
+  /* font-size: 1.125rem; */
+  color: #565555;
+  font-weight: 400;
+  margin-top: -13px;
+  line-height: 1.44444444;
+}
+.mwanzos h1{
+  font-weight: 700;
+  font-size: 21px;
+  color: #5a4269;
+}
+
+
+
+
+
 .programs .cell{
   margin: 35px;
   margin-top: 8px;
@@ -879,7 +1036,7 @@ FONT-FAMILY: ARIAL;
   /* letter-spacing: 1px; */
   /* font-weight: 600; */
   /* font-size: 1rem; */
-  font-size: 15px;
+  font-size: 14px;
   padding: 0px 0px 10px 0px;
   width: auto;
   text-rendering: optimizeLegibility;
