@@ -16,9 +16,10 @@
 <body onload='document.form1.text1.focus()'> 
 
     <nav class="main-nav">
-        <div class="containerr"></div>
+        <!-- <div class="containerr"></div> -->
        
-
+ <div class="container">
+     <div class="inside">
         <div class="nav">
             <li>
            <img class="nailab" src="./images/logo.svg" alt="" /></li>
@@ -30,16 +31,24 @@
             <li><a href="#pup" pat>Plug into Nailab</a></li>
             <li><a href="#pat" >Partnerships</a></li>
             <li>About us</li>
-            <li><a href="./programs template.html">Programs</a></li>
+            <li><a href="./programs.html">Programs</a></li>
             <Button class="btn">SIGN IN</Button>
 
         </div>
 
         <hr>
+    </div>
         </div>
+    </div>
     
     </nav>
+    <div class="header"><div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div> </div>
 </div>
+
+
+
 
 
     <section class="hero" id="hero">
@@ -213,7 +222,7 @@
 
     </section>
 
-    <hr>
+
    
 
     
@@ -225,7 +234,7 @@
         <div class="container">
             <div class="title">
                 <div id="pup"></div>
-                <h1 class="banner-head"> How do you plug into Nailab?</h1>
+                <h1 class="banner-head">Plug into Nailab</h1>
             </div>
         </div>
 </div>
@@ -268,12 +277,13 @@
                       </div>
 
 
-                      <hr>
+                    
 
 
                     <div class="mwanzos">
+                      
                         
-                      <h3 class="issh"> As an intervention strategy we came up with:
+                      <h3 class="issh"> Our intervention strategy
                     </h3>
 
                         <div class="mwanzo">
@@ -293,7 +303,7 @@
 
 
                         <div class="mwanzo-b">
-                            <img src="https://images.unsplash.com/photo-1541877717761-bae17660826b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60" alt="">
+                            <img src="./images/3.png" alt="">
                             <div>
                                 <h1>Mwanzo community
                                 </h1>
@@ -391,7 +401,7 @@
     </div>
   
     </section>
-    <hr>
+
   
     
 
@@ -654,6 +664,15 @@
 <script src="./javascript/script.js"></script>
 
     <script>
+        // When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
 
 var slideIndex = 1;
 showSlides(slideIndex);
